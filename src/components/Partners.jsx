@@ -25,12 +25,12 @@ export default function Partners() {
           {[...partners, ...partners, ...partners, ...partners].map((logo, index) => (
             <div
               key={index}
-              className="flex-shrink-0 w-48 h-24 flex items-center justify-center bg-white shadow-md rounded-lg"
+              className="flex-shrink-0 w-48 h-24 flex items-center justify-center bg-gray-50  rounded-lg"
             >
               <img
                 src={logo}
                 alt={`partner-${index}`}
-                className="max-h-16 object-contain"
+                className="max-h-16 "
               />
             </div>
           ))}

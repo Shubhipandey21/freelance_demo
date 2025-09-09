@@ -67,7 +67,7 @@ export default function BusinessCarousel() {
   return (
     <section className="w-full flex flex-col items-center justify-center py-12 sm:py-16 bg-gray-50">
       <h2 className="text-2xl sm:text-3xl font-semibold text-gray-700 mb-6">
-        OUR PAST EVENTS
+        OUR EVENT GALLERY
       </h2>
       <div className="relative flex items-center justify-center w-full h-[350px] sm:h-[500px] overflow-hidden">
         {images.map((src, i) => {

@@ -18,7 +18,6 @@ function Navbar() {
         <a href="#" className="hover:underline transition-all font-medium">Home</a>
             <a href="#" className="hover:underline transition-all font-medium">Upcoming Events</a>
             <a href="#" className="hover:underline transition-all font-medium">Past Events</a>
-            <a href="#" className="hover:underline transition-all font-medium">Enterprise Solution</a>
             <a href="#" className="hover:underline transition-all font-medium">eMagzine</a>
             <a href="#" className="hover:underline transition-all font-medium">Coporate Membership</a>
 

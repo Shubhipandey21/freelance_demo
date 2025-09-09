@@ -21,7 +21,7 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <section className="relative min-h-[80vh] sm:min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-[80vh] sm:min-h-screen flex items-center justify-center overflow-hidden px-4 sm:px-6 lg:px-20">
       {/* Background Carousel with crossfade effect */}
       <div className="absolute inset-0 w-full h-full">
         {backgrounds.map((bg, i) => (
@@ -35,14 +35,14 @@ export default function HeroSection() {
           />
         ))}
         {/* Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/100 via-black/80 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/70 to-transparent"></div>
       </div>
 
-      {/* Content aligned slightly off-left but closer to center */}
-      <div className="relative z-10 flex flex-col items-start text-left text-white px-6 sm:px-12 lg:px-20 max-w-7xl">
+      {/* Content */}
+      <div className="relative z-10 max-w-3xl text-center sm:text-left text-white">
         <motion.h1
-          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-snug sm:leading-tight mb-6"
-          initial={{ opacity: 0, x: -50 }}
+          className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-snug sm:leading-tight mb-4 sm:mb-6"
+          initial={{ opacity: 0, x: -30 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
         >
@@ -50,36 +50,33 @@ export default function HeroSection() {
         </motion.h1>
 
         <motion.p
-          className="text-base sm:text-lg md:text-xl text-gray-200 mb-8 max-w-lg"
-          initial={{ opacity: 0, x: -50 }}
+          className="text-sm sm:text-base md:text-lg text-gray-200 mb-4 sm:mb-6 px-2 sm:px-0"
+          initial={{ opacity: 0, x: -30 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, delay: 0.3 }}
         >
-          At Achromic Point, we specialize in delivering world-class intelligence and event solutions
-          that fuel organizational success. Our expertise in seminars, conferences, and training
-          sessions has empowered thousands of professionals across industries.
+          At Achromic Point, we specialize in delivering world-class intelligence and event solutions that fuel organizational success. Our expertise in seminars, conferences, and training sessions has empowered thousands of professionals across industries.
         </motion.p>
 
         <motion.p
-          className="text-base sm:text-lg md:text-xl text-gray-200 mb-8 max-w-lg"
-          initial={{ opacity: 0, x: -50 }}
+          className="text-sm sm:text-base md:text-lg text-gray-200 mb-6 px-2 sm:px-0"
+          initial={{ opacity: 0, x: -30 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, delay: 0.5 }}
         >
-          We believe in building partnerships rooted in trust, knowledge sharing, and ethical growth.
-          Our tailored services ensure your business stays competitive, adaptive, and ready for the future.
+          We believe in building partnerships rooted in trust, knowledge sharing, and ethical growth. Our tailored services ensure your business stays competitive, adaptive, and ready for the future.
         </motion.p>
 
         <motion.div
-          className="flex flex-col sm:flex-row gap-4 sm:gap-6"
-          initial={{ opacity: 0, x: -50 }}
+          className="flex flex-col sm:flex-row items-center sm:items-start justify-center sm:justify-start gap-4 sm:gap-6"
+          initial={{ opacity: 0, x: -30 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, delay: 0.7 }}
         >
-          <button className="bg-[#0B0F3B] text-white px-6 sm:px-8 py-3 rounded-md font-semibold shadow-lg hover:bg-gray-800 transition">
+          <button className="bg-[#0B0F3B] text-white px-6 py-3 rounded-md font-semibold shadow-lg hover:bg-gray-800 transition w-full sm:w-auto">
             Conferences →
           </button>
-          <button className="bg-white text-[#0B0F3B] px-6 sm:px-8 py-3 rounded-md font-semibold shadow hover:bg-gray-200 transition">
+          <button className="bg-white text-[#0B0F3B] px-6 py-3 rounded-md font-semibold shadow hover:bg-gray-200 transition w-full sm:w-auto">
             Training Courses →
           </button>
         </motion.div>
@@ -87,6 +84,7 @@ export default function HeroSection() {
     </section>
   );
 }
+
 
 
 // "use client";

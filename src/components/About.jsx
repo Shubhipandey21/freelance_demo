@@ -35,7 +35,7 @@ function About() {
           <motion.img
             src={Image3}
             alt="Success"
-            className="absolute top-16 left-20 rounded-xl shadow-lg w-64 h-72 object-cover border-4 border-white"
+            className="absolute top-16 left-20 rounded-xl shadow-lg w-64 h-64 object-cover border-4 border-white"
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
